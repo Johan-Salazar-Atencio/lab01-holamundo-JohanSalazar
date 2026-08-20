@@ -15,6 +15,7 @@ import androidx.compose.ui.unit.sp
 import com.salazar.lab00.ui.theme.Lab00Theme
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Button
+import androidx.compose.ui.text.font.FontWeight
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,7 +38,7 @@ class MainActivity : ComponentActivity() {
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Column(modifier = modifier) {
         Text(text = "¡Hola, soy $name!", fontSize = 24.sp)
-        Text(text = "Curso: Programación en Móviles")
+        Text(text = "Curso: Programación en Móviles", fontWeight = FontWeight.Bold, fontSize = 18.sp)
         Button(onClick = { }) {Text("Presioname")}
     }
 }
