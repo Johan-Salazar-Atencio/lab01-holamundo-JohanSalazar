@@ -14,6 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import com.salazar.lab00.ui.theme.Lab00Theme
 import androidx.compose.foundation.layout.Column
+import androidx.compose.material3.Button
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,6 +38,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     Column(modifier = modifier) {
         Text(text = "¡Hola, soy $name!", fontSize = 24.sp)
         Text(text = "Curso: Programación en Móviles")
+        Button(onClick = { }) {Text("Presioname")}
     }
 }
 
@@ -44,6 +46,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     Lab00Theme {
-        Greeting("Android")
+        Greeting("Johan")
     }
 }
